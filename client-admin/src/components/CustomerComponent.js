@@ -62,7 +62,7 @@ class Customer extends Component {
     return (
       <div>
         <div className="align-center">
-          <h2 className="text-center">CUSTOMER LIST</h2>
+          <h2 className="menu">CUSTOMER LIST</h2>
           <table className="datatable" border="1">
             <tbody>
               <tr className="datatable">

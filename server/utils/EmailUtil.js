@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransport({
 });
 const EmailUtil = {
   send(email, id, token) {
-    const text = 'Thanks for signing up, please input these informations to activate your account:\n\t .id: ' + id + '\n\t .token: ' + token;
+    const text = 'Xin hãy nhập các thông tin sau vào để hoàn thành đăng ký:\n\t .id: ' + id + '\n\t .token: ' + token;
     return new Promise(function (resolve, reject) {
       const mailOptions = {
         from: MyConstants.EMAIL_USER,

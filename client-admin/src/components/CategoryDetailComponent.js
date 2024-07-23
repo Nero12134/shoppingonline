@@ -14,10 +14,10 @@ class CategoryDetail extends Component {
   render() {
     return (
       <div className="float-right">
-        <h2 className="text-center">CATEGORY DETAIL</h2>
+        <h2 className="menu">CATEGORY DETAIL</h2>
         <form>
           <table>
-            <tbody>
+            <tbody className='background'>
               <tr>
                 <td>ID</td>
                 <td><input type="text" value={this.state.txtID} onChange={(e) => { this.setState({ txtID: e.target.value }) }} readOnly={true} /></td>
@@ -28,10 +28,10 @@ class CategoryDetail extends Component {
               </tr>
               <tr>
               <td></td>
-                <td>
-                <input type="submit" value="ADD NEW" onClick={(e) => this.btnAddClick(e)} />
-                <input type="submit" value="UPDATE" onClick={(e) => this.btnUpdateClick(e)} />
-                <input type="submit" value="DELETE" onClick={(e) => this.btnDeleteClick(e)} />
+                <td >
+                <input type="submit" value="ADD NEW" className='confirmButt' onClick={(e) => this.btnAddClick(e)} />
+                <input type="submit" value="UPDATE" className='confirmButt' onClick={(e) => this.btnUpdateClick(e)} />
+                <input type="submit" value="DELETE" className='confirmButt' onClick={(e) => this.btnDeleteClick(e)} />
                 
                 </td>
                 

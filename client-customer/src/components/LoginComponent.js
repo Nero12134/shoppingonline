@@ -18,7 +18,7 @@ class Login extends Component {
         <h2 className="text-center">CUSTOMER LOGIN</h2>
         <form>
           <table className="align-center">
-            <tbody>
+            <tbody className='background'>
               <tr>
                 <td>Username</td>
                 <td><input type="text" value={this.state.txtUsername} onChange={(e) => { this.setState({ txtUsername: e.target.value }) }} /></td>
@@ -29,7 +29,7 @@ class Login extends Component {
               </tr>
               <tr>
                 <td></td>
-                <td><input type="submit" value="LOGIN" onClick={(e) => this.btnLoginClick(e)} /></td>
+                <td><input type="submit" value="LOGIN" className='confirmButt' onClick={(e) => this.btnLoginClick(e)} /></td>
               </tr>
             </tbody>
           </table>

@@ -24,7 +24,7 @@ class ProductDetail extends Component {
             <figcaption>
               <form>
                 <table>
-                  <tbody>
+                  <tbody className='detail'>
                     <tr>
 
                       <td align="right">ID:</td>
@@ -51,11 +51,11 @@ class ProductDetail extends Component {
                     </tr>
                     <tr>
                       <td align="right">Quantity:</td>
-                      <td><input type="number" min="1" max="99" value={this.state.txtQuantity} onChange={(e) => { this.setState({ txtQuantity: e.target.value }) }} /></td>
+                      <td><input type="number" min="1" max="99" className='numberBox' value={this.state.txtQuantity} onChange={(e) => { this.setState({ txtQuantity: e.target.value }) }} /></td>
                     </tr>
                     <tr>
                       <td></td>
-                      <td><input type="submit" value="ADD TO CART" onClick={(e) => this.btnAdd2CartClick(e)} /></td>
+                      <td><input type="submit" value="ADD TO CART" className='confirmButt' onClick={(e) => this.btnAdd2CartClick(e)} /></td>
                     </tr>
                   </tbody>
                 </table>

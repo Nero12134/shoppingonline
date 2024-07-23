@@ -22,7 +22,7 @@ class Myprofile extends Component {
         <h2 className="text-center">MY PROFILE</h2>
         <form>
           <table className="align-center">
-            <tbody>
+            <tbody className='profile'>
               <tr>
                 <td>Username</td>
                 <td><input type="text" value={this.state.txtUsername} onChange={(e) => { this.setState({ txtUsername: e.target.value }) }} /></td>
@@ -45,7 +45,7 @@ class Myprofile extends Component {
               </tr>
               <tr>
                 <td></td>
-                <td><input type="submit" value="UPDATE" onClick={(e) => this.btnUpdateClick(e)} /></td>
+                <td><input type="submit" value="UPDATE" className='confirmButt' onClick={(e) => this.btnUpdateClick(e)} /></td>
               </tr>
             </tbody>
           </table>

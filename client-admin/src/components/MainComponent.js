@@ -23,7 +23,7 @@ class Main extends Component {
           <Route path='/admin/order' element={<Order />} />
           <Route path='/admin/customer' element={<Customer />} />
         </Routes>
-       
+      
         
         </div>
         

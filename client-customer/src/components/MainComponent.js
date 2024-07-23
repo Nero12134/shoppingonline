@@ -37,7 +37,3 @@ class Main extends Component {
 }
 export default Main;
 
-//quoc1
-//25062002
-//quoc2k2
-//drhiingktklviadb

@@ -30,10 +30,14 @@ figure.caption-right {
 }
 .text-center {
   text-align: center;
+  background-color: #7aadeb;
+  border-radius: 8px;
+  border-style: none;
+  font-size: 18px;
 }
 span.link {
   cursor: pointer;
-  color: blue;
+  color: red;
   text-decoration: underline;
 }
 /* menu.css */
@@ -86,4 +90,65 @@ tr:not(:first-child):nth-child(odd).datatable {
 tr:not(:first-child):hover.datatable {
   background-color: #dcfcfc;
   cursor: pointer;
+}
+
+
+/* CSS */
+.menu {
+  background-color: #7aadeb;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.menu:hover,
+.menu:focus, .text-center:hover {
+  background-color: #F082AC;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  border-radius: 0 5px 5px 0;
+}
+
+.keyword, .numberBox {
+  width: 200px;
+  border: 3px solid #7aadeb;
+  padding: 5px;
+  height: 42px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.submitButt, .confirmButt {
+  border: 1px solid #7aadeb;
+  background: #7aadeb;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.detail, .profile, .active, .background {
+  background: #7aadeb
 }

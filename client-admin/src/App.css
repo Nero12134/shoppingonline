@@ -33,8 +33,8 @@ figure.caption-right {
 }
 span.link {
   cursor: pointer;
-  color: blue;
-  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 /* menu.css */
 div.border-bottom {
@@ -44,7 +44,7 @@ div.border-bottom {
 div.float-left {
   float: left;
 }
-div.float-right {
+div.menu-logout, div.float-right {
   float: right;
 }
 div.float-clear {
@@ -69,10 +69,12 @@ input.keyword {
 .datatable {
   text-align: center;
   border-collapse: collapse;
+  height: 30px;
+  width: 100%;
 }
 /* header */
 tr:first-child.datatable {
-  background-color: #ffcc00;
+  background-color: #f786e8;
 }
 /* even rows, except header */
 tr:not(:first-child):nth-child(even).datatable {
@@ -86,4 +88,56 @@ tr:not(:first-child):nth-child(odd).datatable {
 tr:not(:first-child):hover.datatable {
   background-color: #dcfcfc;
   cursor: pointer;
+}
+body {
+  background-image: url("https://i.pinimg.com/originals/8b/04/c9/8b04c9405a307df013312b2057e791fe.gif");
+  background-color: #cccccc;
+  background-size: cover;
+}
+
+/* CSS */
+.menu, .menu-logout {
+  background-color: #7aadeb;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.menu:hover,
+.menu:focus {
+  background-color: #F082AC;
+}
+
+.confirmButt {
+  border: 1px solid #ffffff;
+  background: #7aadeb;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.background {
+  background: #7aadeb;
 }

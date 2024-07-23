@@ -15,8 +15,8 @@ class Menu extends Component {
             <li className="menu"><Link to='/admin/customer'>Customer</Link></li>
           </ul>
         </div>
-        <div className="float-right">
-          Hello <b>{this.context.username}</b> | <a href="" onClick={() => this.lnkLogoutClick()}>Logout</a><Link to='/admin/home' onClick={() => this.lnkLogoutClick()}>Logout</Link>
+        <div className="menu-logout">
+          Hello <b>{this.context.username}</b> | <a href="" onClick={() => this.lnkLogoutClick()}>Logout</a>
         </div>
         <div className="float-clear" />
       </div>

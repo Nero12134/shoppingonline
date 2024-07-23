@@ -18,7 +18,7 @@ class Signup extends Component {
         <h2 className="text-center">SIGN-UP</h2>
         <form>
           <table className="align-center">
-            <tbody>
+            <tbody className='background'>
               <tr>
                 <td>Username</td>
                 <td><input type="text" value={this.state.txtUsername} onChange={(e) => { this.setState({ txtUsername: e.target.value }) }} /></td>
@@ -41,7 +41,7 @@ class Signup extends Component {
               </tr>
               <tr>
                 <td></td>
-                <td><input type="submit" value="SIGN-UP" onClick={(e) => this.btnSignupClick(e)} /></td>
+                <td><input type="submit" value="SIGN-UP" className='submitButt' onClick={(e) => this.btnSignupClick(e)} /></td>
               </tr>
             </tbody>
           </table>

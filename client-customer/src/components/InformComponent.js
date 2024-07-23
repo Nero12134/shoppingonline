@@ -13,14 +13,16 @@ class Inform extends Component {
           
          
         {this.context.token === '' ?
-          <div><Link to='/login'>Login</Link> | <Link to='/signup'>Sign-up</Link> | <Link to='/active'>Active</Link>  </div>
+          <div className='menu'><Link to='/login'>Login</Link> | <Link to='/signup'>Sign-up</Link> | <Link to='/active'>Active</Link>  </div>
           :
-          <div>Hello <b>{this.context.customer.name}</b> | <Link to='/home' onClick={() => this.lnkLogoutClick()}>Logout</Link> | <Link to='/myprofile'>My profile</Link> | <Link to='/myorders'>My orders</Link></div>
+          <div className='menu'>Hello <b>{this.context.customer.name}</b> | <Link to='/home' onClick={() => this.lnkLogoutClick()}>Logout</Link> | <Link to='/myprofile'>My profile</Link> | <Link to='/myorders'>My orders</Link></div>
         }
         
         </div>
         <div className="float-right">
+        <div className='menu'>
         <Link to='/mycart'>My cart</Link> have <b>{this.context.mycart.length}</b> items
+        </div>
         </div>
         <div className="float-clear" />
       </div>
